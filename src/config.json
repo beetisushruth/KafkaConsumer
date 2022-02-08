@@ -1,0 +1,20 @@
+{
+	"module" : "consumer",
+	"language": "java",
+	"version": "0.0.1",
+	"broker_servers": [
+		{
+			"host": "localhost",
+			"port": "9092"
+		}
+	],
+	"topics": [
+		"quickstart-events"
+	],
+	"group_id": "consumer-group-1",
+	"auto_commit_interval_ms": "1000",
+	"auto_offset_reset": "earliest",
+	"enable_auto_commit": "true",
+	"max_poll_interval_ms": "1000",
+	"max_poll_records": "1"
+}
